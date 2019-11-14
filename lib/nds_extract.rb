@@ -31,4 +31,4 @@ def directors_totals(nds)
   puts result
   return result
 end
-directors_database[0][:movies][0][:worldwide_gross]
+puts directors_database[0][:movies][0][:worldwide_gross]
