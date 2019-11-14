@@ -29,5 +29,6 @@ def directors_totals(nds)
     result[directors_database[names]] = tot.to_s
     names += 1
   end
+  puts result
   return result
 end
