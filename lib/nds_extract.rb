@@ -26,6 +26,6 @@ def directors_totals(nds)
       tot += directors_database[names][:movies][movs][:worldwide_gross]
       movs += 1
     end
-    result[]
+    result[directors_database[names]] = tot.tos
   nil
 end
