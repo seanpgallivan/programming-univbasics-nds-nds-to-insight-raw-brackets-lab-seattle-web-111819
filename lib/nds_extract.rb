@@ -25,10 +25,9 @@ def directors_totals(nds)
       tot += nds[names][:movies][movs][:worldwide_gross]
       movs += 1
     end
-    result[nds[names]] = tot.to_s
+    result[nds[names][:name]] = tot.to_s
     names += 1
   end
   puts result
   return result
 end
-puts directors_database[0][:movies][0][:worldwide_gross]
