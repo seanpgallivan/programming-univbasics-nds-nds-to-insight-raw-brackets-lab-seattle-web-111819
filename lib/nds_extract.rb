@@ -28,7 +28,7 @@ def directors_totals(nds)
       movs += 1
     end
     puts tot
-    result[nds[names][:name]] = tot.to_s
+    result[nds[names][:name]] = tot
     names += 1
   end
   return result
