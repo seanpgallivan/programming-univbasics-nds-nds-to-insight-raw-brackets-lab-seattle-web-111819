@@ -21,16 +21,12 @@ def directors_totals(nds)
   while names < nds.count do
     movs = 0
     tot = 0
-    puts nds[names][:name]
     while movs < nds[names][:movies].count do
-      puts nds[names][:movies][movs][:worldwide_gross]
       tot += nds[names][:movies][movs][:worldwide_gross]
       movs += 1
     end
-    puts tot
     result[nds[names][:name]] = tot
     names += 1
   end
   return result
 end
-directors_totals(directors_database)
